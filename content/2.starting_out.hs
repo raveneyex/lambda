@@ -50,6 +50,10 @@ negative2 = print (-3)
 negative_ops = print (5 * (-3))
 
 -- Simple boolean algebra
+{-
+    Note that the truth value for "true" is `True`, with first letter uppercase.
+    Same applies to the truth value for "false": `False`
+-}
 and = True && True
 
 or = True || False
@@ -80,3 +84,36 @@ diff3 = False /= False
 
     -http://learnyouahaskell.com/starting-out#ready-set-go
 -}
+
+-- Starting with fn composition
+doubleMe x = x + x
+
+{-
+    In the following example note that
+    fn calling has the most precedence.
+
+    The below fn is equivalent to:
+    `doubleUs x y = (doubleMe x) + (doubleMe y)`
+-}
+doubleUs x y = doubleMe x + doubleMe y
+
+{-
+    It is important to notice that in Haskell ALL functions must return something.
+    A clear example of this is the `if` condition that, unlike most languages,
+    forces us to always provide the else part.
+-}
+doubleConditionally x = if x <= 100
+                          then doubleMe x
+                          else (x + 1)
+
+-- Names
+{-
+    In haskell, fns that don't take any parameter and always return the same
+    are called 'names', because their value is interchangeable with their name.
+-}
+
+unity = 1
+
+satan = "satan"
+
+tellName name = print name

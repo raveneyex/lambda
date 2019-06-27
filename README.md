@@ -37,7 +37,16 @@ Covered in this section:
 * Comments
 * Basic function declarations
 * Basic boolean algebra
+* Names
 
-See `/content/2.starting_out.hs`
+See `content/2.starting_out.hs`
+
+#### 3. Starting with Lists
+
+Covered in this section:
+
+* Basic list declarations
+
+See `content/3.starting_lists.hs`
 
 
