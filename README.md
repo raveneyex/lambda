@@ -41,12 +41,30 @@ Covered in this section:
 
 See `content/2.starting_out.hs`
 
-#### 3. Starting with Lists
+#### 3. Lists and more lists...
 
 Covered in this section:
 
 * Basic list declarations
+* Common list operations
 
-See `content/3.starting_lists.hs`
+See: `content/3.starting_lists.hs` and `content/4.common_list_operations.hs`
+
+#### 4. Lists Comprehension
+
+A list can also be created/described by its mathematical set notation:
+
+![alt text](resources/setnotation.png "Set Notation")
+
+In order to study this notation we need to break it down into its parts:
+* The part before the pipe `|` is called the *output function* and it's something that would be applied to every element in the list. 
+  Notice that x is the variable here.
+
+* The first part after the pipe is called the *input set*, and is a bigger set from which we're going to derive a new set.
+
+* The part after the comma `,` is called a *predicate*, and is the filtering to be applied to the *input set* in order to obtain the elements we want.
+
+See `content/5.list_comprehension.hs` for in-depth examples of this.
+
 
 
