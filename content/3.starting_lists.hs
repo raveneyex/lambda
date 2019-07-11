@@ -86,6 +86,12 @@ thirds = [3,6..15]
 oddsR = [1,3..10] 
 
 {-
+    It's also important to notice that floating point numbers aren't precise
+    and therefore using them for ranges could yield funky results
+-}
+funkyRange = [0.1, 0.3 .. 1]
+
+{-
     List can be compared if the individual elements within them
     can also be compared.
     This comparison is made in a n lexicographical order:
