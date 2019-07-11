@@ -4,7 +4,7 @@ pairs = [2,4,6,8,10]
 charArray = ['u','f','o']
 
 {-
-    Lists are declared inside curly brackets
+    Lists are declared inside brackets
     with values separated by comma.
 
     Lists in haskell are *homogeneous*
@@ -80,9 +80,22 @@ evensR = [2,4..10]
 thirds = [3,6..15]
 
 {-
-      Note that in the following example 10 is used as the upper range
-      but given the first two steps it won't be in the created array
+    Note that in the following example 10 is used as the upper range limit
+    but given the first two steps it won't be in the created array
 -}
 oddsR = [1,3..10] 
 
+{-
+    List can be compared if the individual elements within them
+    can also be compared.
+    This comparison is made in a n lexicographical order:
+    First the heads are compared, if they are equal then the second elements are compared, and so on.
+-}
 
+compareA = [4,5,6]
+
+compareB = [1,2,3]
+
+showComparison1 = print (compareA == compareB)
+
+showComparison2 = print (compareA > compareB)
